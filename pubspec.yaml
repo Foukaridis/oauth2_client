@@ -1,4 +1,4 @@
-name: oauth2_client
+name: oauth2_client_celbux
 
 description: Flutter library for interacting with OAuth2 servers, with classes for transparent authorized requests, secure OAuth token storage, automatic token refeshing.
 version: 2.3.3
