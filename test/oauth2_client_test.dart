@@ -2,10 +2,10 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 import 'package:http/http.dart' as http;
-import 'package:oauth2_client/access_token_response.dart';
-import 'package:oauth2_client/oauth2_client.dart';
-import 'package:oauth2_client/src/oauth2_utils.dart';
-import 'package:oauth2_client/src/base_web_auth.dart';
+import 'package:oauth2_client_celbux/access_token_response.dart';
+import 'package:oauth2_client_celbux/oauth2_client.dart';
+import 'package:oauth2_client_celbux/src/oauth2_utils.dart';
+import 'package:oauth2_client_celbux/src/base_web_auth.dart';
 import 'oauth2_client_test.mocks.dart';
 
 @GenerateMocks([BaseWebAuth])

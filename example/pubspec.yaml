@@ -3,7 +3,7 @@ description: Example for the OAuth2 client library
 version: 1.0.0
 # author: TeraNet srl<info@teranet.it>
 homepage: https://github.com/teranetsrl/oauth2_client
-repository: https://github.com/teranetsrl/oauth2_client
+repository: https://github.com/Foukaridis/oauth2_client
 
 environment:
   sdk: '>=2.1.0 <3.0.0'

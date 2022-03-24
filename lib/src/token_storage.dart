@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:oauth2_client/access_token_response.dart';
+import 'package:oauth2_client_celbux/access_token_response.dart';
 
 import 'base_storage.dart';
 import 'storage.dart'

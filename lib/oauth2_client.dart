@@ -1,11 +1,11 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
-import 'package:oauth2_client/access_token_response.dart';
-import 'package:oauth2_client/authorization_response.dart';
-import 'package:oauth2_client/oauth2_response.dart';
-import 'package:oauth2_client/src/oauth2_utils.dart';
-// import 'package:oauth2_client/src/web_auth.dart';
+import 'package:oauth2_client_celbux/access_token_response.dart';
+import 'package:oauth2_client_celbux/authorization_response.dart';
+import 'package:oauth2_client_celbux/oauth2_response.dart';
+import 'package:oauth2_client_celbux/src/oauth2_utils.dart';
+// import 'package:oauth2_client_celbux/src/web_auth.dart';
 
 import 'src/base_web_auth.dart';
 import 'src/web_auth.dart'
