@@ -1,3 +1,5 @@
+## [2.3.4] - 2022/03/24
+* Updated oauth2_utils.dart to generate url from token and auth urls already containing parameters
 ## [2.3.3] - 2022/03/14
 * Expose the BaseStorage object (thanks [Jon Salmon](https://github.com/Jon-Salmon))
 * Improved documentation for android Manifest modification (thanks [supermar1010](https://github.com/supermar1010))
