@@ -1,5 +1,5 @@
 import 'dart:html' as html;
-import 'package:oauth2_client_celbux/src/base_storage.dart';
+import 'package:oauth2_client/src/base_storage.dart';
 
 BaseStorage createStorage() => WebStorage();
 

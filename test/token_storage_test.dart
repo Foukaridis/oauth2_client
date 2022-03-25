@@ -3,9 +3,9 @@ import 'dart:convert';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
-import 'package:oauth2_client_celbux/access_token_response.dart';
-import 'package:oauth2_client_celbux/src/secure_storage.dart';
-import 'package:oauth2_client_celbux/src/token_storage.dart';
+import 'package:oauth2_client/access_token_response.dart';
+import 'package:oauth2_client/src/secure_storage.dart';
+import 'package:oauth2_client/src/token_storage.dart';
 import 'token_storage_test.mocks.dart';
 
 @GenerateMocks([SecureStorage])

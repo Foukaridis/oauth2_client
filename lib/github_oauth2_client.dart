@@ -1,4 +1,4 @@
-import 'package:oauth2_client_celbux/oauth2_client.dart';
+import 'package:oauth2_client/oauth2_client.dart';
 
 /// Implements an OAuth2 client against GitHub
 ///

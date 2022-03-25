@@ -1,11 +1,11 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
-import 'package:oauth2_client_celbux/access_token_response.dart';
-import 'package:oauth2_client_celbux/authorization_response.dart';
-import 'package:oauth2_client_celbux/oauth2_response.dart';
-import 'package:oauth2_client_celbux/src/oauth2_utils.dart';
-// import 'package:oauth2_client_celbux/src/web_auth.dart';
+import 'package:oauth2_client/access_token_response.dart';
+import 'package:oauth2_client/authorization_response.dart';
+import 'package:oauth2_client/oauth2_response.dart';
+import 'package:oauth2_client/src/oauth2_utils.dart';
+// import 'package:oauth2_client/src/web_auth.dart';
 
 import 'src/base_web_auth.dart';
 import 'src/web_auth.dart'
@@ -246,6 +246,7 @@ class OAuth2Client {
         code: code,
         redirectUri: redirectUri,
         codeVerifier: codeVerifier,
+        clientId: clientId,
         customParams: customParams);
 
     var response = await _performAuthorizedRequest(
@@ -347,6 +348,7 @@ class OAuth2Client {
       {required String code,
       String? redirectUri,
       String? codeVerifier,
+      String? clientId,
       Map<String, dynamic>? customParams}) {
     final params = <String, dynamic>{
       'grant_type': 'authorization_code',
@@ -357,12 +359,14 @@ class OAuth2Client {
       params['redirect_uri'] = redirectUri;
     }
 
+    if (clientId != null && clientId.isNotEmpty) {
+      params['client_id'] = clientId;
+    }
+
 /*
     //If a client secret has been specified, it will be sent in the "Authorization" header instead of a body parameter...
     if (clientSecret == null || clientSecret.isEmpty) {
-      if (clientId != null && clientId.isNotEmpty) {
-        params['client_id'] = clientId;
-      }
+      
     }
 */
 

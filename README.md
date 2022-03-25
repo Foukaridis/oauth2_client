@@ -84,9 +84,9 @@ First, instantiate and setup the helper:
 
 
 ```dart
-import 'package:oauth2_client_celbux/oauth2_helper.dart';
+import 'package:oauth2_client/oauth2_helper.dart';
 //We are going to use the google client for this example...
-import 'package:oauth2_client_celbux/google_oauth2_client.dart';
+import 'package:oauth2_client/google_oauth2_client.dart';
 import 'package:http/http.dart' as http;
 
 //Instantiate an OAuth2Client...
@@ -128,7 +128,7 @@ This way tokens won't be automatically stored, nor will be automatically refresh
 ```dart
 //Import the client you need (see later for available clients)...
 import 'myclient.dart'; //Not an actual client!
-import 'package:oauth2_client_celbux/access_token_response.dart';
+import 'package:oauth2_client/access_token_response.dart';
 
 ...
 
@@ -191,7 +191,7 @@ Select **iOS** as *Application Type*, specify a name for the client and in the *
 Then in your code:
 
 ```dart
-import 'package:oauth2_client_celbux/google_oauth2_client.dart';
+import 'package:oauth2_client/google_oauth2_client.dart';
 
 OAuth2Client googleClient = GoogleOAuth2Client(
 	redirectUri: 'my.test.app:/oauth2redirect', //Just one slash, required by Google specs
@@ -208,7 +208,7 @@ In order to use this client you need to first configure OAuth2 credentials in th
 Then in your code:
 
 ```dart
-import 'package:oauth2_client_celbux/facebook_oauth2_client.dart';
+import 'package:oauth2_client/facebook_oauth2_client.dart';
 
 OAuth2Client fbClient = FacebookOAuth2Client(
 	redirectUri: 'my.test.app://oauth2redirect',
@@ -225,7 +225,7 @@ In order to use this client you need to first configure OAuth2 credentials. See 
 Then in your code:
 
 ```dart
-import 'package:oauth2_client_celbux/linkedin_oauth2_client.dart';
+import 'package:oauth2_client/linkedin_oauth2_client.dart';
 
 OAuth2Client liClient = LinkedInOAuth2Client(
 	redirectUri: 'my.test.app://oauth2redirect',
@@ -242,7 +242,7 @@ In order to use this client you need to first create a new OAuth2 App in the Git
 Then in your code:
 
 ```dart
-import 'package:oauth2_client_celbux/github_oauth2_client.dart';
+import 'package:oauth2_client/github_oauth2_client.dart';
 
 OAuth2Client ghClient = GitHubOAuth2Client(
 	redirectUri: 'my.test.app://oauth2redirect',
@@ -258,7 +258,7 @@ Implementing your own client is quite simple, and often it requires only few lin
 In the majority of cases you only need to extend the base *OAuth2Client* class and configure the proper endpoints for the authorization and token url.
 
 ```dart
-import 'package:oauth2_client_celbux/oauth2_client.dart';
+import 'package:oauth2_client/oauth2_client.dart';
 
 class MyOAuth2Client extends OAuth2Client {
   MyOAuth2Client({required String redirectUri, required String customUriScheme}): super(

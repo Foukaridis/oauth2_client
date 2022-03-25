@@ -1,3 +1,5 @@
+## [2.3.5] - 2022/03/25
+* Restored client_id in oauth2_client.dart
 ## [2.3.4] - 2022/03/24
 * Updated oauth2_utils.dart to generate url from token and auth urls already containing parameters
 ## [2.3.3] - 2022/03/14

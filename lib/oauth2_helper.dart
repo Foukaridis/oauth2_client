@@ -1,10 +1,10 @@
-import 'package:oauth2_client_celbux/access_token_response.dart';
-import 'package:oauth2_client_celbux/oauth2_exception.dart';
-import 'package:oauth2_client_celbux/oauth2_client.dart';
+import 'package:oauth2_client/access_token_response.dart';
+import 'package:oauth2_client/oauth2_exception.dart';
+import 'package:oauth2_client/oauth2_client.dart';
 import 'package:http/http.dart' as http;
-import 'package:oauth2_client_celbux/oauth2_response.dart';
-import 'package:oauth2_client_celbux/src/base_web_auth.dart';
-import 'package:oauth2_client_celbux/src/token_storage.dart';
+import 'package:oauth2_client/oauth2_response.dart';
+import 'package:oauth2_client/src/base_web_auth.dart';
+import 'package:oauth2_client/src/token_storage.dart';
 
 /// Helper class for simplifying OAuth2 authorization process.
 ///
