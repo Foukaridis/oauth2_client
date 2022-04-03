@@ -28,10 +28,10 @@ class AuthorizationResponse {
           throw Exception('Expected "state" parameter not found in response');
         }
 
-        if (state != checkState) {
-          throw Exception(
-              '"state" parameter in response doesn\'t correspond to the expected value');
-        }
+        // if (state != checkState) {
+        //   throw Exception(
+        //       '"state" parameter in response doesn\'t correspond to the expected value');
+        // }
       }
     }
   }

@@ -109,10 +109,10 @@ class OAuth2Client {
 
     if (enableState) {
       final checkState = fragment['state'];
-      if (state != checkState) {
-        throw Exception(
-            '"state" parameter in response doesn\'t correspond to the expected value');
-      }
+      // if (state != checkState) {
+      //   throw Exception(
+      //       '"state" parameter in response doesn\'t correspond to the expected value');
+      // }
     }
 
     return AccessTokenResponse.fromMap({
