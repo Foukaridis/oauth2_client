@@ -290,6 +290,12 @@ class OAuth2Helper {
       var resp;
 
       headers!['Authorization'] = 'Bearer ' + accessToken;
+      headers!['Access-Control-Allow-Origin'] = "*";
+      headers!['Access-Control-Allow-Methods'] = 'POST, GET, OPTIONS, PUT, DELETE, HEAD');
+      headers!['Access-Control-Allow-Headers'] = 'custId, appId, Origin, Content-Type, Cookie, X-CSRF-TOKEN, Accept, Authorization, X-XSRF-TOKEN, Access-Control-Allow-Origin');
+      headers!['Access-Control-Expose-Headers'] = 'Authorization, authenticated');
+      headers!['Access-Control-Max-Age'] = '1728000');
+      headers!['Access-Control-Allow-Credentials'] = 'true');
 
       if (method == 'POST') {
         resp = await httpClient!
